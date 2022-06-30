@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,500;8..144,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #ffdef9 !important;
+}
+body h1 {
+  font-family: "Russo One", sans-serif;
+  color: rgb(201, 131, 131);
+  margin-left: 0%;
+  margin-bottom: 1%;
+  font-size: 3rem;
+}
+body p {
+  color: rgb(201, 131, 131);
+  font-size: 2rem;
+}
+body h2 {
+  color: rgb(201, 131, 131);
+  margin-left: 11%;
+  margin-bottom: 5%;
+  margin-top: 1%;
+  font-size: 2rem;
+}
+
+footer {
+  transition: background 1.2s;
+}
+footer div p .footer-texto {
+  color: rgb(231, 167, 167);
+  margin-top: 1%;
+  margin-bottom: 3%;
+  font-family: "Russo One", sans-serif;
+}
+footer div p .footer-texto img {
+  padding: 0px 10px 0px 34px;
+}
+footer div p .footer-texto img .img-footer {
+  transform: scale(1.5);
+}
+
+footer:hover {
+  background: rgb(231, 167, 167);
+}
+
+nav ul li {
+  display: inline-block;
+  width: 10%;
+  padding: 13px 43px;
+  padding: 13px 43px !important;
+  background-color: rgb(252, 200, 200);
+  text-align: center;
+  text-transform: uppercase;
+}
+nav ul li li:hover {
+  background-color: #ffdef9;
+  color: rgb(255, 179, 179) !important;
+  transition-property: all;
+  transition-duration: 0.7s;
+}
+nav ul li li:hover a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+}
+
+#grilla-index {
+  display: grid;
+  grid-template-areas: "header         header     " "encabezado     encabezado " "izquierda      derecha    " "izquierda      derecha    " "izquierda      derecha    " "textoAbajo     textoAbajo " "pieDePagina    pieDePagina";
+  grid-template-rows: 4% 10% 30% 34% 5% 16% 14%;
+  grid-template-columns: 2, 1fr;
+}
+
+header {
+  grid-area: header;
+  background: #ffdef9;
+  justify-self: stretch;
+}
+
+#section-text {
+  grid-area: encabezado;
+  background: pink;
+  border-bottom: 2px solid rosybrown;
+}
+
+#section-izquierda {
+  grid-area: izquierda;
+  background: #ffdef9;
+}
+
+#section-derecha {
+  grid-area: derecha;
+  background: #ffdef9;
+  justify-self: center;
+}
+
+#section-text-dos {
+  grid-area: textoAbajo;
+  background: pink;
+  border-top: 2px solid rosybrown;
+  border-bottom: 2px solid rosybrown;
+}
+
+footer {
+  grid-area: pieDePagina;
+  background: rosybrown;
+}
+
+/**GRILLA DE  PRODUCTOS**/
+#articulos-conteiner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  margin: 2rem;
+}
+
+@media (min-width: 768) {
+  #articulos-conteiner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 480) {
+  #articulos-conteiner {
+    grid-template-columns: 3, 1fr;
+  }
+}/*# sourceMappingURL=style.css.map */
