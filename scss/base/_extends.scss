@@ -1,0 +1,7 @@
+.boton-general{
+    background-color:(map-get ($colores, "primario"));
+    color:(map-get ($colores, "secundario"));
+    border: 10px solid (map-get ($colores, "terciario"));
+    text-decoration: none;
+    text-align: center;
+}

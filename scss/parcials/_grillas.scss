@@ -9,14 +9,15 @@
                          "pieDePagina    pieDePagina"
 ;
 
- grid-template-rows: 4% 10% 30% 34% 5% 16% 14%;
+ grid-template-rows: auto;
  grid-template-columns: (2, 1fr);
 
 }
 header{
     grid-area: header ;
-    background: #ffdef9;
+    background: (map-get ($colores, "secundario"));
     justify-self: stretch;
+    margin-bottom: 3%;
     
 }
 
@@ -24,19 +25,20 @@ header{
     grid-area:encabezado;
 background: pink;
 border-bottom: 2px solid rosybrown;
+margin-bottom: 3%;
 }
 
 
 #section-izquierda{
     grid-area: izquierda;
-    background: #ffdef9;
+    background: (map-get($colores, "cuaternario"));
 
 
 }
 
 #section-derecha{
     grid-area: derecha;
- background: #ffdef9;
+ background: (map-get($colores, "cuaternario"));
  justify-self: center;
 }
 
@@ -45,13 +47,13 @@ border-bottom: 2px solid rosybrown;
     background: pink;
     border-top: 2px solid rosybrown;
     border-bottom: 2px solid rosybrown;
+    margin-bottom: 5%;
 }
 
 footer{
     grid-area: pieDePagina ;
-    background: rosybrown
-
-}
+    background: $principal;
+  }
  
 
 /**GRILLA DE  PRODUCTOS**/

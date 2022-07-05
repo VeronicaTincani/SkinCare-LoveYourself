@@ -5,25 +5,26 @@
 
 body {
    
-    background-color: $terciario !important;
+    background-color: (map-get($colores, "cuaternario")) !important;
+    text-align: center !important;
 
 
     h1 {
         font-family: 'Russo One', sans-serif;
-        color: rgb(201, 131, 131);
+        color:(map-get ($colores, "terciario")) ;
         margin-left: 0%;
         margin-bottom: 1%;
 
         font-size: 3rem;}
-
+        text-align: center !important;
         p {
-            color: rgb(201, 131, 131);
+            color:(map-get ($colores, "terciario")) ;
             font-size: 2rem;}
 
 
 
             h2 {
-                color: rgb(201, 131, 131);
+                color:(map-get ($colores, "terciario")) ;
                 margin-left: 11%;
                 margin-bottom: 5%;
                 margin-top: 1%;

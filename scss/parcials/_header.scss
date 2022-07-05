@@ -1,50 +1,37 @@
-nav{
-  
-    ul{
+nav {
+  ul{
+       a {
+         text-decoration: none;
+         color: inherit;
+         font-size: 14px;
+         color: (map-get($colores, "cuaternario"))!important;
+       }
 
-   
+    li{
+     display:inline-block;
+     width:10% !important;
 
-
-           li{
-    display:inline-block;
-    width:10%;
-    padding: 13px 43px;
-    padding: 13px 43px !important ; 
-    background-color:rgb(252, 200, 200);
-    text-align:center;
-    text-transform: uppercase;
-
-
-      li:hover{
-
-        background-color:#ffdef9;
-       
-        color:rgb(255, 179, 179) !important;
-      transition-property: all;
-        transition-duration: 0.7s;
+     padding: 13px 43px !important ; 
+     background-color: (map-get ($colores, "secundario"));
+     text-align:center !important;
+     text-transform: uppercase;
+ 
     
-
-
-
-     a{
-        text-decoration:none;
-        color:inherit;
-        font-size:14px;
-    
-   
-
-
-
-
-
-
+    &:hover{
+     background-color:$principal;
+     color:(map-get ($colores, "terciario")) !important;
+   transition-property: all;
+     transition-duration: 0.7s;
+     cursor: pointer;
+    }
+ 
      }
 
-    }
-
    }
- 
-}
+  }
+
+li{
+   &:hover{
+     transform: scale(1.2)
+   }
  }
-
-

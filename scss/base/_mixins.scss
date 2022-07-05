@@ -1,0 +1,12 @@
+@mixin tamaño {
+    width: 97%;
+    height: 72%;
+
+}
+@mixin textosolid {
+    
+    text-align: left;
+    text-decoration: solid;
+    font-family: "Russo One", sans-serif;
+    color: rgb(143, 73, 73);
+}

@@ -1,33 +1,19 @@
-footer{    transition: background 1.2s;
-
-          div{
-            p{
-
-            
-             .footer-texto{
-                 color: $secundario;
-                 margin-top: 1%;
-                 margin-bottom: 3%;
-                 font-family: 'Russo One', sans-serif;
-             
-            
-           img { 
-             padding: 0px 10px 0px 34px;
-
-
-                 .img-footer{
-                    transform: scale(1.5);
-                 }
-             }
-        }
-
-
- }
+footer{
+  transition: 1.2s;
+  &:hover{
+    color:  (map-get ($colores, "secundario"));
+  }
+  img{
+    padding:0px 39px 0px 29px;
+ 
+  }
 }
+.img-footer:hover{
+  transform: scale(1.5);
 }
+.footer-texto{
+  color: (map-get ($colores, "secundario"));
+  margin-top: 1%;
+  margin-bottom: 3%;
+  font-family: 'Russo One', sans-serif;}
 
-footer:hover {
-    background:rgb(231, 167, 167);
-   
-     }
-   
