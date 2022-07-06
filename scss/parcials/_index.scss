@@ -1,32 +1,32 @@
-.parrafo-respuesta{
+.parrafo-respuesta {
     margin: 0px 262px 52px 399px;
     font-size: 1rem;
 
-    color:(map-get ($colores, "terciario"));
+    color: (map-get ($colores, "terciario"));
 
 
-&:hover{
-    transform: scale(1.1);
-transition-property: all;
-transition-duration: 1s;
+    &:hover {
+        transform: scale(1.1);
+        transition-property: all;
+        transition-duration: 1s;
+    }
 }
-}
 
-.imag-izq-inicio{
+.imag-izq-inicio {
     height: 88%;
     width: 94%;
     object-fit: cover;
 }
 
 
-.img-derecha-inicio{
+.img-derecha-inicio {
     height: 25%;
     width: 82%;
     margin: 1%;
     padding: 2%;
 }
 
-.texto-p-inicio{
+.texto-p-inicio {
     padding: 0px 259px 23px 249px;
     font-size: 156%;
 }

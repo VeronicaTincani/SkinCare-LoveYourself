@@ -1,55 +1,58 @@
-.titulo-productos{
-	margin: 35px 415px 53px 351px;
-	}
+.titulo-productos {
+    margin: 35px 415px 53px 351px;
+}
 
 
-    .text-oferta{
-        @include textosolid(palevioletred);
-     
-    }
-    .text-stock{
-        @include textosolid;
-  
-    }
+.text-oferta {
+    @include textosolid(palevioletred);
+
+}
+
+.text-stock {
+    @include textosolid;
+
+}
 
 
 
 
-   .articulos{
-       img{
+.articulos {
+    img {
         padding: 18px;
-        border-radius: 6%;
-          @include tamaño; 
-   
-    &:hover{
-    transform: scale(1.1);} 
-    }
-    
+        border-radius: 20%;
+        @include tamaño;
 
-    &--oferta{
-    
-        img{
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+
+    &--oferta {
+
+        img {
             @include textosolid(palevioletred);
         }
     }
-    &--stock{
-        img{
-         @include textosolid;
+
+    &--stock {
+        img {
+            @include textosolid;
         }
-       
+
     }
 
 }
 
 
-    .articulos-carrito{
-        @include tamaño; 
-    }
-    
+.articulos-carrito {
+    @include tamaño;
+}
 
 
-    section{
-        p{
-            font-size: 23px;
-        }
+
+section {
+    p {
+        font-size: 23px;
     }
+}

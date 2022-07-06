@@ -1,19 +1,23 @@
-footer{
+footer {
   transition: 1.2s;
-  &:hover{
-    color:  (map-get ($colores, "secundario"));
+
+  &:hover {
+    color: (map-get ($colores, "secundario"));
   }
-  img{
-    padding:0px 39px 0px 29px;
- 
+
+  img {
+    padding: 0px 39px 0px 29px;
+
   }
 }
-.img-footer:hover{
+
+.img-footer:hover {
   transform: scale(1.5);
 }
-.footer-texto{
+
+.footer-texto {
   color: (map-get ($colores, "secundario"));
   margin-top: 1%;
   margin-bottom: 3%;
-  font-family: 'Russo One', sans-serif;}
-
+  font-family: 'Russo One', sans-serif;
+}
